@@ -4,7 +4,7 @@ A simple task manager web app. Users can register, log in, and manage their own 
 (create, read, update, delete). Built for FAU Engineering Design 2 (ED2) using AI tools
 to write most of the code.
 
-**Deployed app:** <<< PASTE YOUR NETLIFY LINK >>>
+**Deployed app:** https://superlative-parfait-b4ff27.netlify.app/
 
 **Demo video (unlisted on YouTube):** https://youtu.be/blh8xA5xmeE
 
