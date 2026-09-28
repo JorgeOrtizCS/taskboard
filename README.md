@@ -6,7 +6,7 @@ to write most of the code.
 
 **Deployed app:** <<< PASTE YOUR NETLIFY LINK >>>
 
-**Demo video (unlisted on YouTube):** <<< PASTE YOUR YOUTUBE LINK >>>
+**Demo video (unlisted on YouTube):** https://youtu.be/blh8xA5xmeE
 
 ## What the app does
 
