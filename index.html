@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Taskboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Auth screen -->
+  <main id="auth-view" class="auth" hidden>
+    <h1 class="brand">Taskboard</h1>
+    <p class="tagline">Track what you need to get done.</p>
+
+    <div class="tabs" role="tablist">
+      <button id="tab-login" class="tab active" role="tab" type="button">Log in</button>
+      <button id="tab-register" class="tab" role="tab" type="button">Register</button>
+    </div>
+
+    <div class="card">
+      <label for="email">Email</label>
+      <input id="email" type="email" autocomplete="email" placeholder="you@example.com">
+
+      <label for="password">Password</label>
+      <input id="password" type="password" autocomplete="current-password" placeholder="At least 6 characters">
+
+      <button id="auth-submit" class="primary" type="button">Log in</button>
+      <p id="auth-msg" class="msg" role="status"></p>
+    </div>
+  </main>
+
+  <!-- App screen -->
+  <div id="app-view" hidden>
+    <header class="topbar">
+      <h1 class="brand small">Taskboard</h1>
+      <div class="who">
+        <span id="user-email"></span>
+        <button id="logout-btn" class="ghost" type="button">Log out</button>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="card add-card">
+        <h2>Add a task</h2>
+        <div class="add-row">
+          <input id="new-title" type="text" placeholder="What needs to get done?" maxlength="120">
+          <input id="new-due" type="date" aria-label="Due date">
+          <select id="new-status" aria-label="Status">
+            <option value="todo">To do</option>
+            <option value="doing">In progress</option>
+            <option value="done">Done</option>
+          </select>
+          <button id="add-btn" class="primary" type="button">Add task</button>
+        </div>
+        <p id="app-msg" class="msg" role="status"></p>
+      </section>
+
+      <section>
+        <div class="filters" id="filters">
+          <button class="filter active" data-filter="all" type="button">All</button>
+          <button class="filter" data-filter="todo" type="button">To do</button>
+          <button class="filter" data-filter="doing" type="button">In progress</button>
+          <button class="filter" data-filter="done" type="button">Done</button>
+        </div>
+        <ul id="task-list" class="task-list"></ul>
+        <p id="empty" class="empty" hidden>No tasks here yet. Add one above.</p>
+      </section>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
