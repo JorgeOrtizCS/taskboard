@@ -4,6 +4,6 @@
 // Row Level Security policies (see supabase/schema.sql), not by hiding this key.
 // NEVER put the service_role key in this file.
 window.APP_CONFIG = {
-  SUPABASE_URL: "https://YOUR-PROJECT-ID.supabase.co",
-  SUPABASE_ANON_KEY: "YOUR-ANON-PUBLIC-KEY"
+  SUPABASE_URL: "https://vmkdnurodjgjwmdliytf.supabase.co",
+  SUPABASE_ANON_KEY: "sb_publishable_KTLyPGdIVLIwDBL_z9GGSQ_56b-Z0BQ"
 };
