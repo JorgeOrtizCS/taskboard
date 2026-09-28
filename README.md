@@ -23,7 +23,7 @@ to write most of the code.
 - Supabase for the Postgres database and user authentication
 - Netlify for hosting
 - GitHub for version control
-- AI tools: Claude (used to generate the app code, database schema, and README), <<< ADD ANY OTHER TOOLS YOU USED >>>
+- AI tools: Claude (used to generate the app code, database schema, and README), 
 
 ## How it works
 
@@ -39,7 +39,7 @@ to write most of the code.
 
 1. Clone the repo:
 ```
-   git clone https://github.com/YOUR-USERNAME/taskboard.git
+   git clone https://github.com/JorgeOrtizCS/taskboard.git
    cd taskboard
 ```
 2. Create a free project at https://supabase.com.
